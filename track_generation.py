@@ -679,7 +679,7 @@ def main():
             
         content_track = np.array([False, False, False, False, False, False, False])
         #content_name = input('Select content tracks (\'b\' for bass, \'d\' for drums, \'g\' for guitar, \'l\' for lead, \'p\' for piano, \'s\' for strings; multiple choices):')
-        conditional_name = args.select_content_tracks
+        content_name = args.select_content_tracks
         if 'l' in content_name:
             content_track[0] = True
         if 'b' in content_name:
