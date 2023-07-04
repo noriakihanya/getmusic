@@ -413,7 +413,7 @@ def encoding_to_MIDI(encoding, tpc, decode_chord):
     def get_tick(bar, pos):
         return (bar_to_pos[bar] + pos) * midi_obj.ticks_per_beat // pos_resolution
     midi_obj.instruments = [miditoolkit.containers.Instrument(program=(
-        0 if i == 128 else i), is_drum=(i == 128), name=str(i)) for i in range(128 + 1)]
+        0 if i == 128 or i == 4 else i), is_drum=(i == 128), name=str(i)) for i in range(128 + 1)]
 
     for i in encoding:
         start = get_tick(i[0], i[1])
