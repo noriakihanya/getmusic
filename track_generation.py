@@ -142,6 +142,7 @@ def get_args():
     parser.add_argument('--content_name', type=str, default=None)
     parser.add_argument('--file_path', type=str, default=None)
     parser.add_argument('--output_midi', type=str, default=None)
+    parser.add_argument('--tempo', type=float, default=120)
     parser.add_argument('--select_condition_tracks', type=str, default=None)
     parser.add_argument('--select_content_tracks', type=str, default=None)
     parser.add_argument('--skip_step', type=int, default=0)
@@ -508,7 +509,8 @@ def F(file_name, conditional_tracks, content_tracks, condition_inst, chord_from_
     
     chord_list = []
     
-    tempo = b2e(67)
+    #tempo = b2e(67)
+    tempo=args.tempo
 
     lead_start = 0
 
