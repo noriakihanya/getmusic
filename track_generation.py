@@ -142,7 +142,7 @@ def get_args():
     parser.add_argument('--content_name', type=str, default=None)
     parser.add_argument('--file_path', type=str, default=None)
     parser.add_argument('--output_midi', type=str, default=None)
-    parser.add_argument('--tempo', type=float, default=120)
+    parser.add_argument('--tempo', type=int, default=120)
     parser.add_argument('--select_condition_tracks', type=str, default=None)
     parser.add_argument('--select_content_tracks', type=str, default=None)
     parser.add_argument('--skip_step', type=int, default=0)
