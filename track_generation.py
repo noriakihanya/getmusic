@@ -467,7 +467,8 @@ def F(file_name, conditional_tracks, content_tracks, condition_inst, chord_from_
     global ids_to_tokens
     global empty_index
     global pad_index
-
+    args = get_args()
+    
     empty_tracks = ~conditional_tracks & ~content_tracks
     
     conditional_tracks &= ~empty_tracks # emptied tracks can not be condition
