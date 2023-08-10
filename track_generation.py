@@ -648,7 +648,7 @@ def main():
         if '.pth' in file_name:
             continue
         #y = input('skip?')
-        y = n
+        y = 'n'
         if 'y' in y:
             continue
         
